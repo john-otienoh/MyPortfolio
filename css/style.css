@@ -1,0 +1,283 @@
+/* Variables */
+:root {
+  --primary-color: #1e5809;
+  --text-color: #FFF;
+  --border-color: #000;
+  --bio-bg: #000;
+  --bio-border: #FFF;
+  --content-bg: #000;
+  --fg-alt: #444;
+  --shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+}
+
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.highlight {
+  color: var(--primary-color);
+}
+
+/* Layout */
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.bio-section {
+  flex: 1 1 20%;
+  background: var(--bio-bg);
+  text-align: center;
+  padding: 2rem 0.75rem;
+  border-right: 5px solid var(--bio-border);
+}
+
+.main-content {
+  flex: 1 1 80%;
+  background: var(--content-bg);
+  padding: 3rem;
+}
+
+/* Bio Section Styles */
+.bio-image {
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  margin: 1.5rem 0;
+}
+
+.welcome-text {
+  font-weight: bold;
+  margin: 1.25rem 0;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.social-links li {
+  flex: 1;
+  max-width: 60px;
+}
+
+.social-links a {
+  color: var(--primary-color);
+  font-size: 1.875rem;
+}
+
+.email-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.email-link a {
+  color: var(--text-color);
+  text-decoration: none;
+  margin-left: 0.5rem;
+}
+
+.email-link ion-icon {
+  color: var(--primary-color);
+  font-size: 1.25rem;
+}
+
+/* Main Content Styles */
+.name {
+  font-size: 2.625rem;
+  margin-bottom: 1rem;
+}
+
+.description {
+  max-width: 75%;
+  margin-bottom: 0.625rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.75rem 0.625rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin: 1.5rem 0;
+}
+
+.projects-btn {
+  background: var(--primary-color);
+  color: var(--text-color);
+  border: 2px solid var(--primary-color);
+  width: 150px;
+}
+
+.projects-btn:hover {
+  background: transparent;
+}
+
+.projects-btn ion-icon {
+  margin-right: 0.5rem;
+}
+
+/* Skills Section */
+.skills-section h2,
+.projects-section h2 {
+  border-top: 1px solid var(--border-color);
+  padding-top: 1.25rem;
+  margin: 1.25rem 0;
+  font-size: 2rem;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.skill-category {
+  flex: 1 1 33%;
+  max-width: 33%;
+  margin-bottom: 2rem;
+}
+
+.skill-title {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  padding-left: 0.625rem;
+  border-left: 5px solid var(--primary-color);
+}
+
+.skill-category i {
+  font-size: 2.8rem;
+  margin-right: 0.625rem;
+}
+
+/* Projects Section */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.project-card {
+  padding: 2rem;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-7px);
+}
+
+.project-description {
+  margin: 1rem 0;
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1rem 0;
+  list-style: none;
+}
+
+.project-tech li {
+  margin: 0.3rem;
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: var(--fg-alt);
+}
+
+.project-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.project-links a {
+  color: var(--text-color);
+  font-size: 1.2rem;
+}
+
+/* Scroll Top Button */
+.scroll-top {
+  position: fixed;
+  bottom: 1rem;
+  right: 2rem;
+  font-size: 1.8rem;
+  display: none;
+}
+
+.scroll-top a {
+  color: var(--primary-color);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  
+  .bio-section {
+    border-right: none;
+    border-bottom: 5px solid var(--bio-border);
+  }
+  
+  .bio-title {
+    display: none;
+  }
+  
+  .bio-section p {
+    max-width: 60%;
+    margin: 0.625rem auto;
+  }
+  
+  .main-content {
+    text-align: center;
+    padding: 1.5rem;
+  }
+  
+  .description {
+    margin: 0.625rem auto;
+    max-width: 100%;
+  }
+  
+  .projects-btn {
+    margin: 1.25rem auto;
+  }
+  
+  .skill-category {
+    flex: 1 1 100%;
+    max-width: 100%;
+    margin-bottom: 2.5rem;
+    text-align: left;
+  }
+  
+  .skill-category i {
+    font-size: 3.75rem;
+  }
+  
+  .scroll-top {
+    display: none;
+  }
+}
