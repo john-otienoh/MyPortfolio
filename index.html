@@ -3,164 +3,251 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio John Charles Otienoh</title>
+  <title>John Charles Otienoh — Portfolio</title>
+  <link rel="shortcut icon" href="images/profile.jpg" type="image/x-icon">
+
   <!-- Fonts -->
-   <link rel="shortcut icon" href="images/profile.jpg" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;0,900;1,300;1,700;1,900&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
   <!-- Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
   <script src="https://kit.fontawesome.com/fa62c117c7.js" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+
   <!-- CSS -->
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body id="top">
+
   <main class="container">
+
+    <!-- ── Sidebar ── -->
     <aside class="bio-section">
       <h2 class="bio-title">John Charles Otienoh</h2>
+
       <img class="bio-image" src="./images/profile.jpg" alt="John Charles Otienoh">
-      <p>Hello, I'm John Charles Otienoh — a passionate <span class="highlight">Full Stack Developer, </span>aspiring <span class="highlight">Data Engineer</span> and <span class="highlight">Open Source enthusiast</span> who transforms ideas into powerful, user-centric digital solutions.</p>
+      <p>
+        Hello, I'm John — a passionate
+        <span class="highlight">Full Stack Developer</span>,
+        aspiring <span class="highlight">Data Engineer</span> and
+        <span class="highlight">Open Source enthusiast</span>
+        who transforms ideas into powerful, user-centric digital solutions.
+      </p>
+
       <p class="welcome-text">Welcome to my portfolio!</p>
-      <ul class="social-links">
-        <li><a href="https://github.com/john-otienoh" target="_blank" aria-label="GitHub"><ion-icon name="logo-github"></ion-icon></a></li>
-        <li><a href="https://x.com/iamjustotienoh" target="_blank" aria-label="Twitter"><ion-icon name="logo-twitter"></ion-icon></a></li>
-        <li><a href="https://www.linkedin.com/in/john-otienoh/" target="_blank" aria-label="LinkedIn"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+
+      <ul class="social-links" aria-label="Social media links">
+        <li>
+          <a href="https://github.com/john-otienoh" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://x.com/iamjustotienoh" target="_blank" rel="noopener noreferrer" aria-label="X / Twitter profile">
+            <i class="fab fa-x-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/john-otienoh/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
       </ul>
+
       <div class="email-link">
-        <a href="mailto:otienohjohncharles@gmail.com" class="btn projects-btn">
-          <ion-icon name="logo-email"></ion-icon> <span>Email Me</span>
+        <a href="mailto:otienohjohncharles@gmail.com" class="btn email-btn" aria-label="Send email to John">
+          <i class="fas fa-envelope"></i>
+          <span>Email Me</span>
         </a>
       </div>
     </aside>
+
+    <!-- ── Main Content ── -->
     <section class="main-content">
-      <h1 class="name">John Charles Otienoh</h1>
-      <p class="description">I am a developer with a strong foundation in both front-end and back-end technologies, I thrive on building modern web applications that are not only functional but also elegant and efficient. I believe in writing clean, maintainable code and crafting seamless user experiences.</p>
-      <p class="description">I am deeply curious about intelligent systems and how AI can revolutionize industries. Every project I take on is a step toward shaping the future through innovation, collaboration, and continuous learning.</p>
-      <p class="description">I am an open-source enthusiast who believes in the power of collaboration and knowledge sharing. Contributing to and learning from the community keeps me grounded, inspired, and constantly evolving as a developer.</p>
-      <a href="#projects" class="btn projects-btn"><ion-icon name="share-social-outline"></ion-icon> <span>View Projects</span></a>
-      
-      <section class="skills-section">
-        <h2>My Skills</h2>
-        <p class="description">These are the technologies I work with:</p>
+
+      <div class="hero">
+        <p class="terminal-prompt"><span class="prompt-symbol">$</span> whoami</p>
+        <h1 class="name" id="typed-name"></h1>
+        <p class="role-line"><span class="prompt-symbol">&gt;</span> Full Stack Developer · Data Engineer · Open Source</p>
+      </div>
+
+      <div class="descriptions">
+        <p class="description">
+          With a strong foundation in both front-end and back-end technologies, I thrive on building modern
+          web applications that are not only functional but also elegant and efficient. I believe in writing
+          clean, maintainable code and crafting seamless user experiences.
+        </p>
+        <p class="description">
+          Deeply curious about intelligent systems and how AI can revolutionize industries — every project
+          I take on is a step toward shaping the future through innovation, collaboration, and continuous learning.
+        </p>
+        <p class="description">
+          An open-source enthusiast who believes in the power of collaboration and knowledge sharing.
+          Contributing to and learning from the community keeps me grounded, inspired, and constantly evolving.
+        </p>
+      </div>
+
+      <a href="#projects" class="btn projects-btn">
+        <i class="fas fa-terminal"></i>
+        <span>View Projects</span>
+      </a>
+
+      <!-- ── Skills ── -->
+      <section class="skills-section" aria-labelledby="skills-heading">
+        <h2 id="skills-heading"><span class="prompt-symbol">$</span> ls skills/</h2>
+        <p class="description">Technologies I work with:</p>
+
         <div class="skills-grid">
+
           <div class="skill-category">
             <h3 class="skill-title">Core Languages</h3>
-            <i class="devicon-go-original-wordmark colored"></i>
-            <i class="devicon-c-original"></i>
-            <i class="devicon-python-plain-wordmark colored"></i>
+            <i class="devicon-go-original-wordmark colored" title="Go"></i>
+            <i class="devicon-c-original" title="C"></i>
+            <i class="devicon-python-plain-wordmark colored" title="Python"></i>
           </div>
+
           <div class="skill-category">
             <h3 class="skill-title">Front-end</h3>
-            <i class="devicon-html5-plain-wordmark colored"></i>
-            <i class="devicon-css3-plain-wordmark colored"></i>
-            <i class="devicon-javascript-plain colored"></i>
-            <i class="devicon-bootstrap-plain-wordmark colored"></i>
+            <i class="devicon-html5-plain-wordmark colored" title="HTML5"></i>
+            <i class="devicon-css3-plain-wordmark colored" title="CSS3"></i>
+            <i class="devicon-javascript-plain colored" title="JavaScript"></i>
+            <i class="devicon-bootstrap-plain-wordmark colored" title="Bootstrap"></i>
           </div>
+
           <div class="skill-category">
             <h3 class="skill-title">Databases</h3>
-            <i class="devicon-sqlite-plain-wordmark colored"></i>
-            <i class="devicon-postgresql-plain-wordmark colored"></i>
+            <i class="devicon-sqlite-plain-wordmark colored" title="SQLite"></i>
+            <i class="devicon-postgresql-plain-wordmark colored" title="PostgreSQL"></i>
           </div>
+
           <div class="skill-category">
             <h3 class="skill-title">ML Technologies</h3>
-            <i class="devicon-scikitlearn-plain-wordmark colored"></i>
-            <i class="devicon-numpy-plain-wordmark colored"></i>
-            <i class="devicon-tensorflow-original-wordmark colored"></i>
-            <i class="devicon-pandas-plain-wordmark colored"></i>
+            <i class="devicon-scikitlearn-plain-wordmark colored" title="Scikit-learn"></i>
+            <i class="devicon-numpy-plain-wordmark colored" title="NumPy"></i>
+            <i class="devicon-tensorflow-original-wordmark colored" title="TensorFlow"></i>
+            <i class="devicon-pandas-plain-wordmark colored" title="Pandas"></i>
           </div>
+
           <div class="skill-category">
-            <h3 class="skill-title">Back-end Frameworks</h3>
-            <i class="devicon-django-plain-wordmark colored"></i>
-            <!-- <i class="devicon-nodejs-plain-wordmark colored"></i> -->
-            <i class="devicon-fastapi-plain-wordmark"></i>
+            <h3 class="skill-title">Back-end</h3>
+            <i class="devicon-django-plain-wordmark colored" title="Django"></i>
+            <i class="devicon-fastapi-plain-wordmark" title="FastAPI"></i>
           </div>
+
           <div class="skill-category">
             <h3 class="skill-title">Tools</h3>
-            <i class="devicon-linux-plain"></i>
-            <i class="devicon-git-plain-wordmark colored"></i>
+            <i class="devicon-linux-plain" title="Linux"></i>
+            <i class="devicon-git-plain-wordmark colored" title="Git"></i>
           </div>
+
         </div>
       </section>
-      
-      <section id="projects" class="projects-section">
-        <h2>My Projects</h2>
-        <p class="description">These are the projects I have built:</p>
+
+      <!-- ── Projects ── -->
+      <section id="projects" class="projects-section" aria-labelledby="projects-heading">
+        <h2 id="projects-heading"><span class="prompt-symbol">$</span> ls projects/</h2>
+        <p class="description">Things I have built:</p>
+
         <div class="projects-grid">
+
           <article class="project-card">
-            <h3>Smart Poultry Feed Planner</h3>
-            <p class="project-description">
-              A lightweight poultry feed planning tool designed for rural and low-connectivity environments. The app stores all data locally in smart_poultry.db, enabling farmers and extension officers to plan, track, and optimize poultry feeding without internet access. It helps estimate feed quantities, reduce waste, and improve flock nutrition using simple, practical inputs tailored for small-scale operations.
-            </p>
-            <ul class="project-tech">
-              <li>Python</li>
-              <li>CLI</li>
-              <li>Databases</li>
-            </ul>
-            <div class="project-links">
-              <a href="https://github.com/john-otienoh/smartpoultryfeedplanner/" aria-label="source code">
-                <i class="fab fa-github"></i>
-              </a>
-              <a href="https://smartpoultryfeedplanne-aiqsreclayz3uczdyeykag.streamlit.app/" aria-label="live preview">
-                <i class="fas fa-external-link-alt"></i>
-              </a>
+            <div class="card-chrome" aria-hidden="true">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+              <span class="card-chrome-path">~/projects/smart-poultry</span>
+            </div>
+            <div class="card-body">
+              <h3>Smart Poultry Feed Planner</h3>
+              <p class="project-description">
+                A lightweight poultry feed planning tool for rural and low-connectivity environments.
+                Stores data locally in <code>smart_poultry.db</code>, enabling farmers and extension
+                officers to plan, track, and optimize feeding without internet access.
+              </p>
+              <ul class="project-tech" aria-label="Technologies used">
+                <li>Python</li>
+                <li>CLI</li>
+                <li>SQLite</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://github.com/john-otienoh/smartpoultryfeedplanner/" target="_blank" rel="noopener noreferrer" aria-label="View source code on GitHub">
+                  <i class="fab fa-github" aria-hidden="true"></i> Source
+                </a>
+                <a href="https://smartpoultryfeedplanne-aiqsreclayz3uczdyeykag.streamlit.app/" target="_blank" rel="noopener noreferrer" aria-label="Open live demo">
+                  <i class="fas fa-external-link-alt" aria-hidden="true"></i> Live Demo
+                </a>
+              </div>
             </div>
           </article>
 
           <article class="project-card">
-            <h3>BuyBike</h3>
-            <p class="project-description">
-              BuyBike is an e-commerce web application built with Django, HTML, CSS, JavaScript, and SQLite. 
-              It allows users to browse and purchase bikes with features like authentication, product browsing, 
-              shopping cart, checkout, and newsletter subscription.
-            </p>
-            <ul class="project-tech">
-              <li>Django</li>
-              <li>HTML</li>
-              <li>SQlite</li>
-            </ul>
-            <div class="project-links">
-              <a href="https://github.com/john-otienoh/BuyBike" aria-label="source code">
-                <i class="fab fa-github"></i>
-              </a>
-              <a href="#" aria-label="live preview">
-                <i class="fas fa-external-link-alt"></i>
-              </a>
+            <div class="card-chrome" aria-hidden="true">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+              <span class="card-chrome-path">~/projects/buy-bike</span>
+            </div>
+            <div class="card-body">
+              <h3>BuyBike</h3>
+              <p class="project-description">
+                An e-commerce web application built with Django. Features include user authentication,
+                product browsing, shopping cart, checkout flow, and newsletter subscription.
+              </p>
+              <ul class="project-tech" aria-label="Technologies used">
+                <li>Django</li>
+                <li>HTML/CSS</li>
+                <li>SQLite</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://github.com/john-otienoh/BuyBike" target="_blank" rel="noopener noreferrer" aria-label="View source code on GitHub">
+                  <i class="fab fa-github" aria-hidden="true"></i> Source
+                </a>
+                <!-- Live demo not yet deployed — link intentionally omitted -->
+              </div>
             </div>
           </article>
 
           <article class="project-card">
-            <h3>Visit Victoria</h3>
-            <p class="project-description">
-              Tourism platform that showcases the beauty and cultural richness of the Lake Victoria region, 
-              featuring a sleek design with sections highlighting popular travel destinations around the lake, 
-              including locations in Kenya, Uganda, and Tanzania.
-            </p>
-            <ul class="project-tech">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-            </ul>
-            <div class="project-links">
-              <a href="https://github.com/john-otienoh/VisitVictoria" aria-label="source code">
-                <i class="fab fa-github"></i>
-              </a>
-              <a href="https://john-otienoh.github.io/VisitVictoria/" aria-label="live preview">
-                <i class="fas fa-external-link-alt"></i>
-              </a>
+            <div class="card-chrome" aria-hidden="true">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+              <span class="card-chrome-path">~/projects/visit-victoria</span>
+            </div>
+            <div class="card-body">
+              <h3>Visit Victoria</h3>
+              <p class="project-description">
+                A tourism platform showcasing the beauty and cultural richness of the Lake Victoria region,
+                with destinations across Kenya, Uganda, and Tanzania.
+              </p>
+              <ul class="project-tech" aria-label="Technologies used">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://github.com/john-otienoh/VisitVictoria" target="_blank" rel="noopener noreferrer" aria-label="View source code on GitHub">
+                  <i class="fab fa-github" aria-hidden="true"></i> Source
+                </a>
+                <a href="https://john-otienoh.github.io/VisitVictoria/" target="_blank" rel="noopener noreferrer" aria-label="Open live demo">
+                  <i class="fas fa-external-link-alt" aria-hidden="true"></i> Live Demo
+                </a>
+              </div>
             </div>
           </article>
+
         </div>
       </section>
+
     </section>
   </main>
-  
-  <div class="scroll-top">
-    <a aria-label="Scroll up" href="#top">
-      <i class="fas fa-arrow-up"></i>
-    </a>
-  </div>
 
+  <!-- Scroll-to-top -->
+  <a class="scroll-top" href="#top" aria-label="Scroll to top">
+    <i class="fas fa-arrow-up" aria-hidden="true"></i>
+  </a>
+
+  <!-- Ionicons loaded once -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script src="./js/app.js"></script>
-  <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
 </body>
 </html>
