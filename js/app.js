@@ -6,7 +6,7 @@
 const scrollTopBtn = document.querySelector('.scroll-top');
 
 function toggleScrollTop() {
-  const scrolled = document.documentElement.scrollTop > 400;
+  const scrolled = document.documentElement.scrollTop > 200;
   scrollTopBtn.classList.toggle('visible', scrolled);
 }
 
